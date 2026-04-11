@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:8080/api
+
+### 测试验证 - 注册
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "password123"
+}
+
+### 测试验证 - 登录
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "password123"
+}
